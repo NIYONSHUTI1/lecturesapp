@@ -1,0 +1,35 @@
+﻿@using WebApplication.Models
+
+@{
+    Layout = null;
+    Lecture lec = ViewBag.data;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+      
+    <h1>Lecture data</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>@lec.id</td>
+            <td>@lec.fname</td>
+            <td>@lec.lname</td>
+            <td>@lec.course</td>
+        </tr>
+    </table>
+    
+</div>
+</body>
+</html>
